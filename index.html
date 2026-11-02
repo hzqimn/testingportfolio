@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal portfolio of Mohamad Haziq Iman Bin Rosli, IT student at UNIMAS.">
+  <title>Haziq | Personal Portfolio</title>
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <!-- NAVIGATION (stays at the top while scrolling) -->
+  <header class="site-header">
+    <nav aria-label="Main navigation">
+      <a class="logo" href="#home"><img src="logo.png" alt="Haziq logo, go to home" width="60" height="60" onerror="this.remove()"></a>
+      <button id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">&#9776;</button>
+      <ul id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="themeBtn" aria-label="Switch to light theme">&#9728;</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <img id="profile" src="profile.jpg" width="160" height="160">
+      <p>Hi!</p>
+      <h1>I am Mohamad Haziq Iman Bin Rosli</h1>
+      <p>Welcome to my personal homepage</p>
+      <a class="btn" href="#projects">Go to my projects</a>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="intro">I am a passionate and motivated IT student with a strong interest in <strong>coding</strong> and <strong>network systems</strong>. I am currently studying at the Faculty of Computer Science and Information Technology, UNIMAS, where I continue to build my skills in programming, databases and security.</p>
+      <p class="intro">I do not give up easily, and I enjoy trying new things. Through my projects in PHP, Python, Java and JavaScript, I have learned to solve problems step by step. I also like to keep up with computer news, so I can keep learning outside the classroom.</p>
+
+      <h3>Education</h3>
+      <ul class="hobbies">
+        <li>Currently studying at the Faculty of Computer Science and Information Technology, UNIMAS.</li>
+        <li>Diploma in Information Technology, Politeknik Kuching Sarawak.</li>
+      </ul>
+
+      <h3>My Hobbies</h3>
+      <ul class="hobbies">
+        <li>Playing video games</li>
+        <li>Building a Gundam</li>
+        <li>Watching movies on Netflix</li>
+        <li>Listening to music</li>
+        <li>Exploring news about computers</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="database">Database</button>
+        <button class="filter" data-filter="software">Software</button>
+        <button class="filter" data-filter="design">Design</button>
+      </div>
+      <p id="count" aria-live="polite"></p>
+
+      <div class="grid">
+        <article class="card" data-category="database">
+          <h3>FitLife Wellness Centre Management System</h3>
+          <p class="kind">Database System</p>
+          <p>A database management system developed to manage the daily operations of a wellness centre. It handles member registration, trainer information, fitness programmes, class enrolments and payment records, and provides reports to help manage membership fees, classes and trainer performance.</p>
+          <p><strong>Technologies:</strong> PHP, XAMPP, HTML, CSS</p>
+          <div class="more" hidden>
+            <h4>Key features</h4>
+            <ul>
+              <li>Member and trainer management</li>
+              <li>Fitness programme and class enrolment</li>
+              <li>Payment record management</li>
+              <li>Reports for members, classes and trainer performance</li>
+            </ul>
+          </div>
+          <button class="toggle" aria-expanded="false">Show key features</button>
+        </article>
+
+        <article class="card" data-category="software">
+          <h3>DirectFarm Samarahan Application</h3>
+          <p class="kind">Python Application</p>
+          <p>A Python application designed to support agricultural activities by connecting farmers, buyers, coordinators and drivers. It manages produce information, customer orders, delivery processes and payment settlements using object-oriented programming principles.</p>
+          <p><strong>Technologies:</strong> Python </p>
+          <div class="more" hidden>
+            <h4>Key features</h4>
+            <ul>
+              <li>Produce information management</li>
+              <li>Customer order processing</li>
+              <li>Delivery management</li>
+              <li>Payment settlement and report management</li>
+            </ul>
+          </div>
+          <button class="toggle" aria-expanded="false">Show key features</button>
+        </article>
+
+        <article class="card" data-category="software">
+          <h3>Password Guessing Attack Prevention System</h3>
+          <p class="kind">Cybersecurity</p>
+          <p>A cybersecurity project focused on improving login security and protecting user accounts against password guessing attacks. It demonstrates multi-factor authentication, suspicious login detection and security measures based on login risk levels.</p>
+          <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+          <div class="more" hidden>
+            <h4>Key features</h4>
+            <ul>
+              <li>Multi-factor authentication using OTP</li>
+              <li>Suspicious login detection</li>
+              <li>Risk-based login verification</li>
+              <li>Temporary login blocking for high-risk attempts</li>
+            </ul>
+          </div>
+          <button class="toggle" aria-expanded="false">Show key features</button>
+        </article>
+
+        <article class="card" data-category="design">
+          <h3>EV Car Navigation Dashboard UI</h3>
+          <p class="kind">UI/UX Design / HCI</p>
+          <p>A user interface design for an electric vehicle navigation dashboard. It focuses on clear route information, readable navigation elements and easy-to-understand icons, applying Human-Computer Interaction (HCI) principles to improve usability and reduce driver distraction.</p>
+          <p><strong>Technologies:</strong> Canva </p>
+          <div class="more" hidden>
+            <h4>Key features</h4>
+            <ul>
+              <li>Navigation map and route display</li>
+              <li>Clear icons and visual elements</li>
+              <li>Simple and organised dashboard layout</li>
+              <li>User-friendly interface based on HCI principles</li>
+            </ul>
+          </div>
+          <button class="toggle" aria-expanded="false">Show key features</button>
+        </article>
+
+        <article class="card" data-category="software">
+          <h3>Encoded Message Generator Application</h3>
+          <p class="kind">Java Programming</p>
+          <p>A Java application developed to encode text messages using a character validation process and a shift-based encoding method. Users enter a message, the application checks that the input is valid, then generates an encoded message using a calculated shift value.</p>
+          <p><strong>Technologies:</strong> Java</p>
+          <div class="more" hidden>
+            <h4>Key features</h4>
+            <ul>
+              <li>Text input and validation</li>
+              <li>Character counting</li>
+              <li>Shift value generation</li>
+              <li>Encoded message output through a graphical user interface</li>
+            </ul>
+          </div>
+          <button class="toggle" aria-expanded="false">Show key features</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input id="name" type="text" autocomplete="name">
+        <span class="error" id="nameErr" role="alert"></span>
+
+        <label for="mail">Email</label>
+        <input id="mail" type="email" autocomplete="email">
+        <span class="error" id="mailErr" role="alert"></span>
+
+        <label for="msg">Message <small>(<span id="chars">0</span>/200)</small></label>
+        <textarea id="msg" rows="4" maxlength="200"></textarea>
+        <span class="error" id="msgErr" role="alert"></span>
+
+        <button class="btn" type="submit">Send message</button>
+        <p id="formOk" role="status"></p>
+      </form>
+
+      <div class="contact-info">
+  <p><strong><span aria-hidden="true">✉</span> Email</strong><br><a href="mailto:105015@siswa.unimas.my">105015@siswa.unimas.my</a></p>
+  <p><strong><span aria-hidden="true">📞</span> Phone</strong><br><a href="tel:+60174479120">017-447 9120</a></p>
+</div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Mohamad Haziq Iman. UNIMAS.</p>
+  </footer>
+
+  <button id="topBtn" aria-label="Back to top" hidden>&uarr;</button>
+  <script src="script.js"></script>
+</body>
+</html>
